@@ -63,8 +63,9 @@ public class ApplicationTest {
         Fish alpha = new Fish("Alpha");
         Pet[] tempArray = {spot, alpha, charlie, flipper};
         newApp.pets = tempArray;
-        Pet[] Expected = {charlie, spot, alpha, flipper};
+        Pet[] expected = {charlie, spot, alpha, flipper};
         Pet[] actual = newApp.getSortedPets();
+        Assert.assertArrayEquals(expected, actual);
     }
 
 }
