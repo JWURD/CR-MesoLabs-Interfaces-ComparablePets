@@ -49,7 +49,7 @@ public class ApplicationTest {
 
     @Test
     public void getListTest(){
-        String expected = "I have 3 pets. My Dog is Spot. My Cat is Charlie. My Fish is Flipper.";
+        String expected = "I have 3 pets. My Dog Spot says Bark. My Cat Charlie says Meow. My Fish Flipper says Blub.";
         String actual = app.getList();
         Assert.assertEquals(expected, actual);
     }
