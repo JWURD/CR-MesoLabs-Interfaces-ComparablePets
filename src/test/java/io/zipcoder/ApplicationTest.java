@@ -63,7 +63,8 @@ public class ApplicationTest {
         Fish alpha = new Fish("Alpha");
         Pet[] tempArray = {spot, alpha, charlie, flipper};
         newApp.pets = tempArray;
-
+        Pet[] Expected = {charlie, spot, alpha, flipper};
+        Pet[] actual = newApp.getSortedPets();
     }
 
 }

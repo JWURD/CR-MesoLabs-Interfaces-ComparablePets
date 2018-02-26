@@ -42,4 +42,7 @@ public class Application {
         return null;
     }
 
+    public Pet[] getSortedPets() {
+        return null;
+    }
 }
